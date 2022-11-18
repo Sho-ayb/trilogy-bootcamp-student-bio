@@ -1,0 +1,75 @@
+/* 
+
+
+* This is part of the trilogy bootcamp module one - week 1 of 04-stu-HTML-CSS-Layout found in existing_repo 
+* The link to the repo can be found here: https://git.bootcampcontent.com/uk-edx-16-week/UK-VIRT-FE-PT-11-2022-U-LOLC
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*  this allows for the margin and padding to be included in the width/height of an element  */
+}
+
+/* Lets now start styling the html file */
+
+body {
+  background-color: #efeee7;
+  font: Georgia, "Times New Roman", Times, serif; /* you have to place quotes around ones that have spaces*/
+  color: #333333; /*n.b. there is not font-color property in css */
+}
+
+header {
+  background-color: #333333;
+}
+
+h1 {
+  color: #eee;
+  font-size: 28px;
+  padding: 25px; /*set a space around the inside of an element */
+}
+
+h2 {
+  font-size: 24px;
+}
+
+/* when querying a class attribute use the dot notation  */
+
+.container {
+  width: 1024px;
+  margin: 0 auto; /* this means that the margin top/bottom is zero whereas the left/right are auto - worked out by the user browser  */
+}
+
+/* i have grouped all the elements with the id selector together comma separated. Note also that; the float: left pushes all the elements below to the left and thus; are stacked left against each other. This means then that this causes the element to lose the display: block property and that means that it no longer has its own space */
+
+#main-bio,
+#contact-info,
+#bio-image {
+  float: left;
+}
+
+#bio-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 22px;
+}
+
+#main-bio {
+  width: 70%;
+}
+
+p {
+  padding-right: 15px;
+}
+
+#contact-info {
+  width: 30%;
+  line-height: 1.5;
+}
+
+/* n.b. to get to actual anchor link you have to move - reference it from the unordered list, to the list item and then to the anchor element */
+
+ul li a {
+  color: #d21034;
+}
